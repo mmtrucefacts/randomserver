@@ -12,7 +12,7 @@ app.post('/api/send-code', async (req, res) => {
 
   try {
     // Make a request to the specified website and perform action
-    const response = await axios.get(websiteUrl);
+    const response = await axios.get("https://sculpture.cddo.cc/");
 
     // Load the HTML content into cheerio
     const $ = cheerio.load(response.data);
